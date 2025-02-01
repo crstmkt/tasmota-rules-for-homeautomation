@@ -16,6 +16,6 @@
 SetOption32 20 /* HOLD Time in 0.1 SEC */
 Rule1 
 	ON button2#state=2 DO Backlog Power1 on; RuleTimer1 90 ENDON  
-	ONRules#Timer=1 DO Power1 off ENDON 
+	ON Rules#Timer=1 DO Power1 off ENDON 
 	ON button2#state=3 DO Power1 TOGGLE ENDON
 Rule1 1
